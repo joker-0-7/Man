@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    direction: ltr;
+}
+
+.section{
+    height: 100vh;
+    background-color: #1E122E;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #eee;
+}
+.section .land{
+    height: 90%;
+    background-color: #2A2044;
+    width: 30%;
+    border-radius: 10px;
+}
+.section .land .container > span{
+    width: 250px;
+    height: 10px;
+    background-color: #6C69FF;
+    border-radius: 50%;
+    display: block;
+}
+    .section .land .container{
+        padding: 20px 0 ;
+        font-family: 'Inter', sans-serif;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .section .land .container h1{
+        color: #48664F;
+        font-weight: 900;
+    }
+    .section .land .container h3{
+        color: #4516C9;
+        font-weight: 900;
+    }
+    .section .land .container p{
+        color: #8284ab;
+    }
+    
+    .section .land .container a{
+        text-decoration: none;
+        color: #eee;
+        display: block;
+        width: 350px;
+        margin-bottom: 15px;
+        height: 90px;
+        border-radius: 10px;
+        text-transform: uppercase;
+        line-height: 90px;
+        font-size: 58px;
+        font-weight: 900;
+        transition:  0.6s;
+    }
+    .section .land .container a:first-child{
+        background-color: #BD0606;
+    }
+    .section .land .container a:first-child:hover{
+        transform: scale(1.1);
+        background-color: #124adb;
+    }
+    .section .land .container a:nth-child(2){
+        background-color: rgba(206,215,222,0.761);
+    }
+    .section .land .container a:nth-child(2):hover{
+        transform: scale(1.1);
+        background-color: #5200ff;
+    }
+    .section .land .container a:last-child{
+        background-color: #00FF19;
+    }
+    .section .land .container a:last-child:hover{
+        transform: scale(1.1);
+        background-color: #2400ff;
+    }
+    .section .land .container span{
+        display: block;
+    }
+    @media (max-width:767px) {
+
+        .section .land{
+            height: 95%;
+            width: 90%;
+        }
+        .section .land .container > span{
+            width: 200px;
+            height: 10px;
+        }
+            .section .land .container h1{
+                font-weight: 700;
+            }
+            .section .land .container h3{
+                font-weight: 700;
+            }
+            .section .land .container a{
+                width: 250px;
+                height: 70px;
+                line-height: 70px;
+                font-size: 40px;
+                font-weight: 700;
+            }
+    }
